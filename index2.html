@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile making</title>
+    <link rel="stylesheet" href="newstyle.css">
+</head>
+<body>
+    <div class="profile">
+        <nav>
+            <img src="logo.jpeg" alt="college logo" class="logo">
+            <ul>
+                <li><a href=""></a>Home</li>
+                <li><a href=""></a>Features</li>
+                <li><a href=""></a>About</li>
+                <li><a href=""></a>Contact</li>
+            </ul>
+            <img src="user.jpg" class="user-pic" onclick="toggleMenu()">
+
+           <div class="submenu" id="subMenuid">
+            <div class="submenu2">
+                <div class="userinfo">
+                    <img src="user.jpg">
+                    <h2>Sudhir Kumar</h2>
+                </div>
+                <hr>
+                
+                <a href="#" class="submenu-link">
+                    <img src="profile.png" >
+                    <p>Edit profile</p>
+                    <span></span>
+                </a>
+                <a href="#" class="submenu-link">
+                    <img src="setting.png" >
+                    <p>Settings & Privacy</p>
+                    <span></span>
+                </a>
+
+                <a href="#" class="submenu-link">
+                    <img src="achivement.jpeg" >
+                    <p class="clickable-paragraph" id="myParagraph">Acheivements</p>
+                    <span></span>
+                </a>
+
+                <a href="#" class="submenu-link">
+                    <img src="help.png" >
+                    <p>Help & Support</p>
+                    <span></span>
+                </a>
+                <a href="#" class="submenu-link">
+                    <img src="logout.png" >
+                    <p>Logout</p>
+                    <span></span>
+                </a>
+            </div>
+           </div>
+        </nav>
+    </div>
+
+<script>
+    let subMenuid = document.getElementById("subMenuid");
+
+    function toggleMenu(){
+        subMenuid.classList.toggle("open-menu");
+    }
+</script>    
+<script>
+    // JavaScript to make the paragraph clickable as a link
+    document.getElementById("myParagraph").onclick = function() {
+      window.location.href = "http://127.0.0.1:5500/%20certification.html"; // Change URL to desired destination
+    };
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:url('college.jpeg') no-repeat;
+    background-color: transparent;
+    background-size:cover ;
+    background-position: center;
+}
+
+.completeform{
+    width: 420px;
+    background:transparent;
+    border:2px solid lightblue;
+    color: white;
+    padding: 30px 40px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 20px;
+
+}
+
+.completeform h1{
+    font-size: 36px;
+   text-align: center;
+   color: rgb(229, 229, 239);
+}
+
+.completeform .inputbox{
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+.inputbox input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(169, 23, 147);
+    border-radius: 40px;
+    font-size: 16px;
+    color: white;
+    padding: 20px 45px 20px 20px;
+}
+
+.inputbox input::placeholder{
+    color: white;
+}
+
+.completeform .rem{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin: -15px 0 15px;
+}
+.rem label input{
+    accent-color: #fff;
+    margin: 4px;
+}
+
+.rem a{
+    color: white;
+    text-decoration: none;
+
+}
+.rem a:hover{
+    text-decoration: underline;
+}
+.completeform button{
+    width: 100%;
+    height: 45px;
+    background-color: rgb(26, 74, 208);
+    border:none;
+    outline: none;
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(47, 22, 22);
+    cursor: pointer;
+    
+}
+.completeform .register-link{
+    text-align: center;
+    font-size: 15px;
+    margin: 20px 0 15px;
+
+}
+
+.register-link p a{
+    color: white;
+    text-decoration: none;
+    font-weight:600px;
+}
+.register-link p a:hover{
+    text-decoration: underline;
+}
